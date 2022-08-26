@@ -1,0 +1,115 @@
+*{
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  display: flex;
+  background-color: chocolate;
+  justify-content: center;
+  text-align: center;
+}
+
+audio {
+  background-color: whitesmoke;
+  border-radius: 5px;
+  height: 32px;
+  width: 400px;
+  border: 5px double silver;
+}
+
+.container {
+  position: absolute;
+  height: 190vh;
+  top: 40%;
+  margin: 5px;
+  padding: 5px;
+  border: 10px double rgb(238, 194, 164);
+  border-radius: 15px;
+}
+
+.info_list{
+  position: sticky;
+  top: 0px;
+  background-color: chocolate;
+  border: 1px double rgb(238, 194, 164);
+  border-radius: 15px;
+  margin: 3px;
+  padding: 5px;
+}
+
+.title {
+  position: absolute;
+  top: 10px;
+  width: 80%;
+  font-size: 24px;
+  margin: 5px;
+  justify-content: center;
+  text-align: center;
+}
+
+.artist {
+  position: absolute;
+  top: 40px;
+  width: 80%;
+  margin: 5px;
+}
+
+img {
+  border: 5px double silver;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.btn {
+  border-radius: 50px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.header {
+  margin: 10px;
+  font-size: 32px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  cursor: pointer;
+  transition: 0.5s;
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+  margin: 3px;
+  padding: 3px;
+  min-height: 51.2px;
+}
+
+.playing {
+  color: blue;
+  font-size: larger;
+  transition: 0.5s;
+}
+
+  /*! ROTATE *****************************/
+  .rotate {
+    border: 3px solid silver;
+    border-radius: 100px;
+    animation-delay: 1s;
+    animation: rotation 8s infinite linear;
+    transition: all 0.5s ease;
+    /* transition: 0.5s; */
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+      
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+  /* !*************************************/
