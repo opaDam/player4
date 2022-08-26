@@ -7,6 +7,7 @@ body {
   background-color: chocolate;
   justify-content: center;
   text-align: center;
+  min-width: 620px;
 }
 
 audio {
@@ -113,3 +114,4 @@ li {
     }
   }
   /* !*************************************/
+
