@@ -1,6 +1,7 @@
-*{
+* {
   box-sizing: border-box;
 }
+
 body {
   position: relative;
   display: flex;
@@ -20,20 +21,16 @@ audio {
 
 .container {
   position: absolute;
-  height: 190vh;
+  min-height: 200px;
   top: 40%;
   margin: 5px;
   padding: 5px;
-  border: 10px double rgb(238, 194, 164);
-  border-radius: 15px;
 }
 
-.info_list{
+.info_list {
   position: sticky;
   top: 0px;
   background-color: chocolate;
-  border: 1px double rgb(238, 194, 164);
-  border-radius: 15px;
   margin: 3px;
   padding: 5px;
 }
@@ -81,37 +78,36 @@ ul {
 li {
   cursor: pointer;
   transition: 0.5s;
-  border: 1px solid whitesmoke;
-  border-radius: 5px;
   margin: 3px;
   padding: 3px;
   min-height: 51.2px;
 }
 
 .playing {
-  color: blue;
+  color: whitesmoke;
   font-size: larger;
   transition: 0.5s;
 }
 
-  /*! ROTATE *****************************/
-  .rotate {
-    border: 3px solid silver;
-    border-radius: 100px;
-    animation-delay: 1s;
-    animation: rotation 8s infinite linear;
-    transition: all 0.5s ease;
-    /* transition: 0.5s; */
-  }
-  
-  @keyframes rotation {
-    from {
-      transform: rotate(0deg);
-      
-    }
-    to {
-      transform: rotate(359deg);
-    }
-  }
-  /* !*************************************/
+/*! ROTATE *****************************/
+.rotate {
+  border: 3px solid silver;
+  border-radius: 100px;
+  animation-delay: 1s;
+  animation: rotation 8s infinite linear;
+  transition: all 0.5s ease;
+  /* transition: 0.5s; */
+}
 
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+/* !*************************************/
